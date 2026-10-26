@@ -7,10 +7,6 @@ export default function LandingPage({ onStartQuiz, onResumeQuiz, hasSavedProgres
       {/* Hero Section */}
       <section className="hero-section" aria-labelledby="hero-title">
         <div className="container container-narrow">
-          <div className="hero-pill-badge">
-            <span className="status-dot"></span>
-            <span>Interactive 2026 Edition • Current Search Best Practices</span>
-          </div>
 
           <h1 id="hero-title" className="hero-headline">
             How SEO Smart Are You?
