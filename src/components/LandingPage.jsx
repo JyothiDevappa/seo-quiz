@@ -1,5 +1,4 @@
-import React from 'react';
-import { CATEGORIES, SEO_LEVELS } from '../data/questions';
+import { CATEGORIES } from '../data/questions';
 
 export default function LandingPage({ onStartQuiz, onResumeQuiz, hasSavedProgress, savedQuestionIndex }) {
   return (
@@ -113,25 +112,6 @@ export default function LandingPage({ onStartQuiz, onResumeQuiz, hasSavedProgres
         </div>
       </section>
 
-      {/* SEO Levels Preview */}
-      <section className="container" aria-labelledby="levels-heading">
-        <div className="levels-preview">
-          <div className="levels-header">
-            <h2 id="levels-heading">Four Personalized Rank Tiers</h2>
-            <p>Your final score unlocks your official SEO IQ rank with actionable recommendations.</p>
-          </div>
-
-          <div className="levels-grid">
-            {SEO_LEVELS.map((lvl) => (
-              <div key={lvl.title} className="level-card">
-                <div className="level-badge" aria-hidden="true">{lvl.badge}</div>
-                <div className="level-title">{lvl.title}</div>
-                <div className="level-range">{lvl.min}–{lvl.max} points</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </main>
   );
 }
