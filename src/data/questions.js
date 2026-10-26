@@ -45,12 +45,12 @@ export const QUESTIONS = [
     id: 1,
     categoryId: "fundamentals",
     categoryName: "SEO Fundamentals",
-    question: "What does the acronym 'SEO' stand for, and what is its primary objective?",
+    question: "What does SEO stand for?",
     options: [
-      { id: "A", text: "Social Engine Optimization — maximizing shares across social media networks." },
-      { id: "B", text: "Search Engine Optimization — improving organic visibility and unpaid traffic from search engines." },
-      { id: "C", text: "Site Efficiency Operations — optimizing web server response times and database queries." },
-      { id: "D", text: "Sponsored Entry Options — managing pay-per-click bidding campaigns on Google Ads." }
+      { id: "A", text: "Social Engine Optimization" },
+      { id: "B", text: "Search Engine Optimization" },
+      { id: "C", text: "Site Efficiency Operations" },
+      { id: "D", text: "Sponsored Entry Options" }
     ],
     correctAnswer: "B",
     explanation: "SEO stands for Search Engine Optimization. Unlike paid advertising (PPC), SEO focuses on optimizing your site's structure, technical health, content, and authority to earn organic, non-paid visibility and qualified visitors from search engines."
