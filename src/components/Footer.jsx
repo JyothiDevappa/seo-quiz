@@ -13,7 +13,7 @@ export default function Footer({ onRestart, onGoHome }) {
             SEO IQ — The SEO Challenge
           </div>
           <div>
-            Built with modern web standards and current search best practices. No account required.
+            Test your SEO knowledge, learn something new, and discover how search-ready you really are — no sign-up required.
           </div>
         </div>
 
