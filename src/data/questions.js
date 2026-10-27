@@ -59,21 +59,21 @@ export const QUESTIONS = [
     id: 2,
     categoryId: "fundamentals",
     categoryName: "SEO Fundamentals",
-    question: "What is the primary difference between organic search results and paid search ads?",
+    question: "What is the difference between organic search results and paid ads on Google?",
     options: [
-      { id: "A", text: "Paid ads only show images, while organic results only display plain text." },
-      { id: "B", text: "Organic rankings are earned algorithmically without paying per click, whereas paid ads incur a fee for every click." },
-      { id: "C", text: "Organic search results only display on mobile devices, while ads only appear on desktop computers." },
-      { id: "D", text: "Organic rankings require an active monthly contract directly with Google." }
+      { id: "A", text: "Organic results appear naturally, while paid ads require payment for clicks." },
+      { id: "B", text: "Both organic results and paid ads require payment for clicks." },
+      { id: "C", text: "Organic results require payment, while paid ads are free." },
+      { id: "D", text: "Both organic results and paid ads appear without payment." }
     ],
-    correctAnswer: "B",
-    explanation: "Organic search listings are ranked independently by search engine algorithms based on relevance, quality, and user experience. Paid search (PPC/SEM) displays 'Sponsored' listings that require paying the advertising platform every time someone clicks."
+    correctAnswer: "A",
+    explanation: "Organic results appear naturally based on relevance and quality without paying for clicks. Paid ads require payment every time someone clicks on them."
   },
   {
     id: 3,
     categoryId: "fundamentals",
     categoryName: "SEO Fundamentals",
-    question: "Which sequence correctly describes how search engines process web pages to present them in search results?",
+    question: "In what order does Google process web pages?",
     options: [
       { id: "A", text: "Ranking → Indexing → Crawling" },
       { id: "B", text: "Advertising → Publishing → Archiving" },
@@ -81,13 +81,13 @@ export const QUESTIONS = [
       { id: "D", text: "Designing → Linking → Monetizing" }
     ],
     correctAnswer: "C",
-    explanation: "Search engines follow a three-step pipeline: Crawling (discovering URLs by following links and reading sitemaps), Indexing (parsing, interpreting, and storing the page content in a massive database), and Ranking (delivering the most relevant and high-quality results when a user enters a query)."
+    explanation: "Google works in three basic steps: Crawling (finding the page), Indexing (saving and understanding the page), and Ranking (deciding where to show it in search results)."
   },
   {
     id: 4,
     categoryId: "fundamentals",
     categoryName: "SEO Fundamentals",
-    question: "What does the industry term 'SERP' stand for?",
+    question: "What does 'SERP' stand for in SEO?",
     options: [
       { id: "A", text: "Search Engine Results Page" },
       { id: "B", text: "Site Evaluation & Ranking Protocol" },
@@ -95,21 +95,21 @@ export const QUESTIONS = [
       { id: "D", text: "Standard Electronic Retrieval Program" }
     ],
     correctAnswer: "A",
-    explanation: "SERP stands for Search Engine Results Page. It is the page displayed to users after submitting a search query. Modern SERPs include traditional organic links alongside rich elements such as Featured Snippets, People Also Ask boxes, map packs, and sponsored ads."
+    explanation: "SERP stands for Search Engine Results Page. It is simply the page of results you see after typing a search into Google."
   },
   {
     id: 5,
     categoryId: "fundamentals",
     categoryName: "SEO Fundamentals",
-    question: "Why can no reputable SEO agency or consultant legitimately guarantee the #1 spot on Google?",
+    question: "Why can no SEO company guarantee the #1 spot on Google?",
     options: [
-      { id: "A", text: "Google only permits non-profit organizations to hold the top position." },
-      { id: "B", text: "The #1 position is permanently reserved for websites that spend the most on Google Ads." },
-      { id: "C", text: "Google's algorithms are proprietary, continually updated, and evaluate hundreds of dynamic competitive factors outside any third party's control." },
-      { id: "D", text: "Search results are randomly shuffled every 24 hours to give all sites an equal turn." }
+      { id: "A", text: "Google only allows non-profit websites to be #1." },
+      { id: "B", text: "The top spot is randomly chosen every day." },
+      { id: "C", text: "Only Google controls its ranking algorithms, and they constantly change." },
+      { id: "D", text: "You must sign a secret contract with Google to be #1." }
     ],
     correctAnswer: "C",
-    explanation: "Google explicitly warns webmasters: 'Beware of SEOs that claim to guarantee rankings.' Google's complex ranking algorithms, competitor actions, and personalized search factors are completely outside any third party's direct control."
+    explanation: "Nobody controls Google's ranking system except Google. Because algorithms and competitors change constantly, no one can honestly guarantee a #1 rank."
   },
 
   // ==========================================
@@ -119,71 +119,71 @@ export const QUESTIONS = [
     id: 6,
     categoryId: "keywords",
     categoryName: "Keyword Research & Search Intent",
-    question: "What is 'Search Intent' (also known as user intent) in modern SEO?",
+    question: "What is 'Search Intent'?",
     options: [
-      { id: "A", text: "The speed at which a user types their query into the search bar." },
-      { id: "B", text: "The primary underlying goal or question a person wants answered when searching." },
-      { id: "C", text: "The number of keywords a webmaster forces into a single blog post." },
-      { id: "D", text: "The internet service provider and browser version a user is running." }
+      { id: "A", text: "How fast a user types into the search box." },
+      { id: "B", text: "The reason or goal behind a person's search." },
+      { id: "C", text: "The total number of words on a webpage." },
+      { id: "D", text: "The web browser a person is using." }
     ],
     correctAnswer: "B",
-    explanation: "Search intent is the purpose behind a search query. Google prioritizes pages that best satisfy what the user actually wants to accomplish—whether that is finding information, locating a specific website, comparing products, or making a purchase."
+    explanation: "Search intent is the goal someone has when searching—such as learning something, finding a specific website, or buying a product."
   },
   {
     id: 7,
     categoryId: "keywords",
     categoryName: "Keyword Research & Search Intent",
-    question: "Which of the following queries is a prime example of 'Transactional' search intent?",
+    question: "Which search shows that someone is ready to buy something?",
     options: [
       { id: "A", text: "'What is cold brew coffee?'" },
       { id: "B", text: "'History of espresso machines'" },
-      { id: "C", text: "'Buy whole bean arabica coffee discount free shipping'" },
+      { id: "C", text: "'Buy coffee beans online discount'" },
       { id: "D", text: "'Cold brew vs iced coffee differences'" }
     ],
     correctAnswer: "C",
-    explanation: "Transactional queries feature explicit purchasing terms like 'buy', 'discount', or 'order', signaling that the searcher is ready to complete a transaction. Queries asking 'what is' are informational, while comparison queries are commercial investigation."
+    explanation: "Searches with words like 'buy', 'discount', or 'order' show transactional intent, meaning the user wants to purchase something right now."
   },
   {
     id: 8,
     categoryId: "keywords",
     categoryName: "Keyword Research & Search Intent",
-    question: "What is a 'long-tail keyword' and why are they valuable in an SEO strategy?",
+    question: "What is a 'long-tail keyword'?",
     options: [
-      { id: "A", text: "A keyword that contains more than 100 characters and can only be placed in website footers." },
-      { id: "B", text: "A highly specific multi-word phrase that usually has lower search volume but higher conversion intent and lower competition." },
-      { id: "C", text: "An outdated keyword that has lost all search traffic over the last decade." },
-      { id: "D", text: "A keyword reserved exclusively for veterinary and pet care websites." }
+      { id: "A", text: "A single broad word like 'shoes'." },
+      { id: "B", text: "A specific multi-word phrase like 'best running shoes for flat feet'." },
+      { id: "C", text: "A broken keyword that Google cannot read." },
+      { id: "D", text: "A keyword used only on pet websites." }
     ],
     correctAnswer: "B",
-    explanation: "Long-tail keywords (e.g., 'best ergonomic office chair for lower back pain') are specific queries. While individual search volume is lower than broad 'head' terms ('chairs'), they account for the majority of total web searches, convert significantly better, and have clearer search intent."
+    explanation: "Long-tail keywords are longer, more specific search phrases. They have lower competition and usually attract visitors who know exactly what they want."
   },
   {
     id: 9,
     categoryId: "keywords",
     categoryName: "Keyword Research & Search Intent",
-    question: "What is 'keyword stuffing', and how do modern search engines respond to it?",
+    question: "What is 'keyword stuffing'?",
     options: [
-      { id: "A", text: "Carefully placing synonyms in header tags; search engines reward it with top rankings." },
-      { id: "B", text: "Artificially cramming repetitive keywords into content to manipulate rankings; it hurts user experience and can lead to search penalties." },
-      { id: "C", text: "Storing keywords in a password-protected zip file on your web hosting server." },
-      { id: "D", text: "Translating keywords into multiple languages to rank internationally." }
+      { id: "A", text: "Using helpful synonyms in your headings." },
+      { id: "B", text: "Repeating the same keyword unnaturally many times to try to trick Google." },
+      { id: "C", text: "Saving keywords in a folder on your computer." },
+      { id: "D", text: "Translating your content into multiple languages." }
     ],
     correctAnswer: "B",
-    explanation: "Keyword stuffing is an obsolete spam tactic that involves repeating target phrases unnaturally (e.g., 'We sell cheap watches. Our cheap watches are the best cheap watches...'). Modern algorithms utilize natural language processing (NLP) to understand context and will devalue or penalize stuffed content."
+    explanation: "Keyword stuffing means cramming repetitive words into your content. Google considers this spam and will lower your ranking for it."
   },
   {
     id: 10,
     categoryId: "keywords",
     categoryName: "Keyword Research & Search Intent",
-    question: "What does 'Search Volume' indicate in keyword research tools?",
+    question: "What does 'Search Volume' mean in keyword research?",
     options: [
-      { id: "A", text: "How loudly the audio plays when visiting a web page." },
-      { id: "B", text: "The estimated average number of times a particular keyword is searched over a given time frame (typically per month)." },
-      { id: "C", text: "The total number of images and videos indexed on a target domain." },
-      { id: "D", text: "The physical server storage space required to host the keyword database." }
+      { id: "A", text: "How loud the video plays on your website." },
+      { id: "B", text: "How many times a keyword is searched per month." },
+      { id: "C", text: "The total number of images on your website." },
+      { id: "D", text: "The size of your website's database." }
     ],
     correctAnswer: "B",
-    explanation: "Monthly Search Volume (MSV) estimates how frequently users search for a specific term each month. While high volume indicates broad interest, high-performing SEO strategies balance volume with search intent, competition, and business relevance."
+    explanation: "Search volume is the estimated number of times people search for a specific keyword in Google every month."
   },
 
   // ==========================================
@@ -193,71 +193,71 @@ export const QUESTIONS = [
     id: 11,
     categoryId: "onpage",
     categoryName: "On-Page SEO",
-    question: "What is the primary role and best practice for an HTML `<title>` tag?",
+    question: "What is the HTML `<title>` tag used for?",
     options: [
-      { id: "A", text: "It sets the copyright notice at the bottom of the footer." },
-      { id: "B", text: "It defines the page title in browser tabs and search snippets; it should be unique, descriptive, and under ~60 characters." },
-      { id: "C", text: "It replaces the need to create any visible content on the webpage." },
-      { id: "D", text: "It determines the font size of the first paragraph on your page." }
+      { id: "A", text: "It sets the copyright notice in the footer." },
+      { id: "B", text: "It is the clickable headline in Google search results and browser tabs." },
+      { id: "C", text: "It replaces the need to write any text on the webpage." },
+      { id: "D", text: "It sets the font size of the first paragraph." }
     ],
     correctAnswer: "B",
-    explanation: "The HTML title tag (<title>) is one of the most critical on-page SEO signals. It appears as the main clickable headline in search results and on browser tabs. Keeping it around 50–60 characters prevents truncation on SERPs."
+    explanation: "The title tag is the clickable headline displayed on Google search results and on browser tabs. It tells visitors and Google what the page is about."
   },
   {
     id: 12,
     categoryId: "onpage",
     categoryName: "On-Page SEO",
-    question: "How does a well-crafted Meta Description primarily benefit SEO?",
+    question: "Why is a good Meta Description important for a webpage?",
     options: [
-      { id: "A", text: "Google uses it as a direct mathematical ranking factor that guarantees page 1 status." },
-      { id: "B", text: "It hides your webpage from competitors who view your source code." },
-      { id: "C", text: "It acts as organic ad copy in search results, improving Click-Through Rate (CTR) even though it is not a direct ranking factor." },
-      { id: "D", text: "It automatically generates backlinks from social media websites." }
+      { id: "A", text: "Google automatically puts you at #1 if you have one." },
+      { id: "B", text: "It hides your website code from competitors." },
+      { id: "C", text: "It provides a short summary under your link, encouraging people to click." },
+      { id: "D", text: "It automatically creates social media accounts for your site." }
     ],
     correctAnswer: "C",
-    explanation: "Google confirmed that meta descriptions are not a direct algorithmic ranking factor. However, an accurate, compelling meta description (~150–160 characters) encourages searchers to click your link over competitors, directly boosting your organic Click-Through Rate (CTR)."
+    explanation: "A meta description is the short summary snippet under your link in Google. An interesting summary convinces more people to click your link."
   },
   {
     id: 13,
     categoryId: "onpage",
     categoryName: "On-Page SEO",
-    question: "What is the primary SEO and accessibility purpose of Image Alt Text (`alt` attribute)?",
+    question: "What is Image Alt Text (`alt` attribute) used for?",
     options: [
-      { id: "A", text: "To encrypt the image file so bots cannot download high-resolution copies." },
-      { id: "B", text: "To provide a text description for screen readers used by visually impaired users and help search engines understand the image content." },
-      { id: "C", text: "To automatically adjust the contrast and brightness of the photograph." },
-      { id: "D", text: "To compress image file sizes by 50% without quality loss." }
+      { id: "A", text: "To password protect images on your site." },
+      { id: "B", text: "To describe images for visually impaired users and help Google understand them." },
+      { id: "C", text: "To automatically make photos brighter and clearer." },
+      { id: "D", text: "To make images load in 3D." }
     ],
     correctAnswer: "B",
-    explanation: "Alt text serves two vital functions: accessibility (allowing screen readers to describe images to visually impaired users) and search engine indexing (allowing search bots to understand the visual content and rank it in Google Images)."
+    explanation: "Alt text describes what an image shows. Screen readers read it aloud for visually impaired users, and search engines use it to index images."
   },
   {
     id: 14,
     categoryId: "onpage",
     categoryName: "On-Page SEO",
-    question: "What is the recommended best practice for structuring heading tags (H1, H2, H3) on a webpage?",
+    question: "What is the best way to organize headings (H1, H2, H3) on a page?",
     options: [
-      { id: "A", text: "Use only H1 tags everywhere on the page to make all text rank equally." },
-      { id: "B", text: "Organize content with a single, clear H1 for the primary topic, followed by H2s and H3s in a logical hierarchy for subtopics." },
-      { id: "C", text: "Select heading tags solely based on font colors and avoid using regular paragraph tags." },
-      { id: "D", text: "Nest H1 tags inside H6 tags for maximum keyword amplification." }
+      { id: "A", text: "Use only H1 tags for all text on the entire page." },
+      { id: "B", text: "Use one H1 for the main title, with H2 and H3 tags for sections and sub-topics." },
+      { id: "C", text: "Avoid headings completely and use only bold text." },
+      { id: "D", text: "Put all heading tags at the very bottom of the page." }
     ],
     correctAnswer: "B",
-    explanation: "Heading tags provide a clear semantic outline. Using a single descriptive H1 as the page's main headline, supported by H2s for major sections and H3s for nested subtopics, helps both human readers and search engine crawlers quickly digest the structure."
+    explanation: "Headings work like an outline: one main H1 title at the top, followed by H2 and H3 tags for smaller sections and sub-topics."
   },
   {
     id: 15,
     categoryId: "onpage",
     categoryName: "On-Page SEO",
-    question: "Why are internal links important for a website's on-page SEO?",
+    question: "Why are internal links (links between your own pages) helpful?",
     options: [
-      { id: "A", text: "They help crawlers discover content, establish topical relationships, and distribute PageRank across your own domain." },
-      { id: "B", text: "They prevent visitors from ever navigating away to external websites." },
-      { id: "C", text: "They are required by web hosting companies to keep server certificates valid." },
-      { id: "D", text: "They count as paid advertisements in Google Ads accounts." }
+      { id: "A", text: "They help visitors and Google easily explore other pages on your site." },
+      { id: "B", text: "They stop visitors from ever closing their browser." },
+      { id: "C", text: "They are legally required by domain registrars." },
+      { id: "D", text: "They convert your pages into paid advertisements." }
     ],
     correctAnswer: "A",
-    explanation: "Internal links connect pages within the same website. They guide visitors to related content, help search bots crawl new and deeper pages, establish site hierarchy, and pass ranking authority (equity/PageRank) across your pages."
+    explanation: "Internal links connect pages within your website. They help people navigate easily and help Google discover and rank all your content."
   },
 
   // ==========================================
@@ -267,71 +267,71 @@ export const QUESTIONS = [
     id: 16,
     categoryId: "technical",
     categoryName: "Technical SEO",
-    question: "What is the primary function of a `robots.txt` file?",
+    question: "What does a `robots.txt` file do?",
     options: [
-      { id: "A", text: "To protect websites from hardware failures and power outages." },
-      { id: "B", text: "To give instructions to web crawlers about which URL paths they are allowed or disallowed to crawl." },
-      { id: "C", text: "To automatically rewrite human articles using artificial intelligence." },
-      { id: "D", text: "To securely store database passwords for site administrators." }
+      { id: "A", text: "It protects your server from power outages." },
+      { id: "B", text: "It tells search engine bots which pages they can or cannot visit." },
+      { id: "C", text: "It writes articles using artificial intelligence." },
+      { id: "D", text: "It stores secret passwords for site administrators." }
     ],
     correctAnswer: "B",
-    explanation: "A `robots.txt` file sits at the root of a domain and instructs search engine crawlers which sections of the site they should not crawl (e.g., admin dashboards, internal search result pages, shopping carts), helping conserve crawl budget."
+    explanation: "A `robots.txt` file tells search engine bots which parts of your website they are allowed to crawl and which private areas (like admin pages) to avoid."
   },
   {
     id: 17,
     categoryId: "technical",
     categoryName: "Technical SEO",
-    question: "What is an XML Sitemap and why should websites have one?",
+    question: "What is an XML Sitemap?",
     options: [
-      { id: "A", text: "A visual menu bar shown to mobile users when JavaScript is disabled." },
-      { id: "B", text: "A structured file listing a website's important URLs to help search engines discover and crawl them efficiently." },
-      { id: "C", text: "A CSS file that changes the layout based on the user's geographic location." },
-      { id: "D", text: "A legal document outlining a website's privacy policy and terms of service." }
+      { id: "A", text: "A popup map showing your physical business address." },
+      { id: "B", text: "A list of all important pages on your website to help Google find them." },
+      { id: "C", text: "A styling file that changes your button colors." },
+      { id: "D", text: "A terms of service legal document." }
     ],
     correctAnswer: "B",
-    explanation: "An XML Sitemap is a roadmap of your website's important URLs formatted specifically for search engines. It includes metadata like last modification dates and helps crawlers discover new, updated, or deeply buried pages."
+    explanation: "An XML Sitemap is a roadmap of your website's important pages made specifically for search engines so they can easily find and crawl them."
   },
   {
     id: 18,
     categoryId: "technical",
     categoryName: "Technical SEO",
-    question: "What does the `rel='canonical'` tag do when added to a webpage?",
+    question: "What does a canonical tag (`rel='canonical'`) do?",
     options: [
-      { id: "A", text: "It informs search engines which URL represents the master or preferred version when duplicate or similar pages exist." },
-      { id: "B", text: "It forces the browser to open the webpage in full-screen kiosk mode." },
-      { id: "C", text: "It prevents other websites from taking screenshots of your content." },
-      { id: "D", text: "It permanently removes the page from all internet archives." }
+      { id: "A", text: "It tells Google which version of a page is the main original one when copies exist." },
+      { id: "B", text: "It forces the website to open in full screen mode." },
+      { id: "C", text: "It prevents users from copying text on your site." },
+      { id: "D", text: "It deletes duplicate pages from your server." }
     ],
     correctAnswer: "A",
-    explanation: "Canonical tags (`rel='canonical'`) resolve duplicate content problems. If the same content is accessible via multiple URLs (e.g., HTTP vs HTTPS, URL parameters, or product variants), the canonical tag tells Google which URL should be indexed and credited."
+    explanation: "When you have similar or duplicate pages, a canonical tag tells Google: 'This is the main original version you should rank.'"
   },
   {
     id: 19,
     categoryId: "technical",
     categoryName: "Technical SEO",
-    question: "What is the key difference between an HTTP 301 redirect and an HTTP 302 redirect in SEO?",
+    question: "What is the difference between a 301 redirect and a 302 redirect?",
     options: [
-      { id: "A", text: "301 is a permanent redirect that transfers link equity, whereas 302 is temporary and preserves the original URL's indexing." },
-      { id: "B", text: "301 redirects are exclusively for images, while 302 redirects are exclusively for PDF files." },
-      { id: "C", text: "302 redirects pass 100% of link authority, while 301 redirects penalize the website." },
-      { id: "D", text: "301 redirects only work on mobile devices, while 302 redirects work on desktop." }
+      { id: "A", text: "301 is permanent, while 302 is temporary." },
+      { id: "B", text: "301 is for images, while 302 is for text." },
+      { id: "C", text: "301 is temporary, while 302 is permanent." },
+      { id: "D", text: "301 is for phones, while 302 is for computers." }
     ],
     correctAnswer: "A",
-    explanation: "A 301 redirect signals 'Moved Permanently,' passing accumulated backlinks and ranking signals to the new destination. A 302 redirect signals 'Found / Moved Temporarily,' instructing search engines to keep indexing the original URL."
+    explanation: "A 301 redirect tells Google that a page has moved permanently to a new URL, transferring its SEO ranking power. A 302 redirect is only temporary."
   },
   {
     id: 20,
     categoryId: "technical",
     categoryName: "Technical SEO",
-    question: "What is the most reliable way to prevent a specific webpage from appearing in Google search results?",
+    question: "How do you stop a specific webpage from showing in Google search results?",
     options: [
-      { id: "A", text: "Change the page font color to white so crawlers cannot read it." },
-      { id: "B", text: "Add a `<meta name='robots' content='noindex'>` tag in the `<head>` of the page." },
-      { id: "C", text: "Block the page in robots.txt and delete all images on the page." },
-      { id: "D", text: "Rename the URL to include the word 'secret'." }
+      { id: "A", text: "Change the text font color to white." },
+      { id: "B", text: "Add a 'noindex' tag to the page." },
+      { id: "C", text: "Put the word 'hidden' in the website URL." },
+      { id: "D", text: "Turn off your computer's internet connection." }
     ],
     correctAnswer: "B",
-    explanation: "The `<meta name='robots' content='noindex'>` directive is the standard, reliable method to prevent a page from showing in search results. Simply blocking in `robots.txt` is not enough because Google may still index the URL if other sites link to it."
+    explanation: "Adding a `noindex` tag (`<meta name='robots' content='noindex'>`) instructs Google directly not to show that page in search results."
   },
 
   // ==========================================
@@ -341,71 +341,71 @@ export const QUESTIONS = [
     id: 21,
     categoryId: "offpage",
     categoryName: "Off-Page SEO & Backlinks",
-    question: "What is a 'backlink' (inbound link) in the context of SEO?",
+    question: "What is a 'backlink' in SEO?",
     options: [
-      { id: "A", text: "A button that takes a user back to their browser's previous history page." },
-      { id: "B", text: "A link on an external website that points directly to a page on your website." },
-      { id: "C", text: "A backup copy of your database saved to an offline external drive." },
-      { id: "D", text: "A link connecting your navigation menu to your website homepage." }
+      { id: "A", text: "The 'Back' button in your web browser." },
+      { id: "B", text: "A link on another website that points to your website." },
+      { id: "C", text: "A backup copy of your website files." },
+      { id: "D", text: "A link from your header to your footer." }
     ],
     correctAnswer: "B",
-    explanation: "A backlink is an external hyperlink from someone else's website pointing to yours. Search engines view high-quality backlinks as votes of confidence, signaling that third parties find your content authoritative, credible, and useful."
+    explanation: "A backlink is when another website adds a link pointing to your site. Google views quality backlinks like votes of trust in your content."
   },
   {
     id: 22,
     categoryId: "offpage",
     categoryName: "Off-Page SEO & Backlinks",
-    question: "Which of the following characteristics makes a backlink most valuable and impactful?",
+    question: "Which kind of backlink is most valuable for SEO?",
     options: [
-      { id: "A", text: "Coming from a high-authority, topically relevant website with genuine editorial endorsement." },
-      { id: "B", text: "Coming from a forum with 10,000 automated spam comments." },
-      { id: "C", text: "Being hidden as 1-pixel invisible text at the bottom of a page." },
-      { id: "D", text: "Coming from an unrelated casino site in a different language." }
+      { id: "A", text: "A link from a trusted, relevant website in your industry." },
+      { id: "B", text: "Thousands of spam comments on random forums." },
+      { id: "C", text: "An invisible link hidden at the bottom of a page." },
+      { id: "D", text: "A link from an unrelated casino website." }
     ],
     correctAnswer: "A",
-    explanation: "Quality and relevance drastically outweigh raw quantity. A single backlink from an authoritative, trusted website in your specific industry carries immense weight, whereas thousands of low-quality or irrelevant links can trigger spam filters."
+    explanation: "Quality is far more important than quantity. One link from an honest, respected, and relevant website helps your SEO much more than thousands of spam links."
   },
   {
     id: 23,
     categoryId: "offpage",
     categoryName: "Off-Page SEO & Backlinks",
-    question: "What does the `rel='nofollow'` attribute indicate when attached to an outbound link?",
+    question: "What does a 'nofollow' link attribute do?",
     options: [
-      { id: "A", text: "It prevents humans from being able to click on the hyperlink." },
-      { id: "B", text: "It instructs search engines not to transfer endorsement or PageRank to the linked page." },
-      { id: "C", text: "It immediately causes the linked external website to crash." },
-      { id: "D", text: "It sends an automated email notifying the target website owner." }
+      { id: "A", text: "It prevents visitors from clicking on the link." },
+      { id: "B", text: "It tells Google not to pass ranking credit or endorsement to the linked page." },
+      { id: "C", text: "It crashes the linked external website." },
+      { id: "D", text: "It sends an automated email to the site owner." }
     ],
     correctAnswer: "B",
-    explanation: "The `rel='nofollow'` attribute signals to search engine crawlers that the publisher does not endorse or pass ranking credit (PageRank) to the target URL. It is commonly used for paid advertisements, sponsored links, and user-generated comments."
+    explanation: "A 'nofollow' tag tells search engines: 'Don't pass SEO ranking power to this link.' It is commonly used for paid ads, sponsorships, and user comments."
   },
   {
     id: 24,
     categoryId: "offpage",
     categoryName: "Off-Page SEO & Backlinks",
-    question: "What is 'anchor text' in link building and on-page optimization?",
+    question: "What is 'anchor text'?",
     options: [
-      { id: "A", text: "The visible, clickable text inside a hyperlink that describes the target destination." },
-      { id: "B", text: "The weight and dimensions of the computer server hosting the site." },
-      { id: "C", text: "The invisible watermark placed onto copyright-protected images." },
-      { id: "D", text: "The fixed header that remains anchored to the top of the browser screen." }
+      { id: "A", text: "The clickable text words inside a hyperlink." },
+      { id: "B", text: "The physical weight of the computer hosting the website." },
+      { id: "C", text: "A watermark placed on copyrighted images." },
+      { id: "D", text: "A navigation bar fixed to the top of the screen." }
     ],
     correctAnswer: "A",
-    explanation: "Anchor text is the clickable text snippet within a hyperlink (e.g. `<a href='...'>Keyword Research Guide</a>`). Search engines evaluate anchor text to better understand the context and subject matter of the destination page."
+    explanation: "Anchor text is the clickable text of a link (e.g., 'Learn SEO here'). It helps both users and Google understand what the linked page is about."
   },
   {
     id: 25,
     categoryId: "offpage",
     categoryName: "Off-Page SEO & Backlinks",
-    question: "Why are manipulative link-building schemes (such as buying bulk links or Private Blog Networks) dangerous?",
+    question: "Why is buying fake links or spamming links bad for your website?",
     options: [
-      { id: "A", text: "They violate Google's Search Essentials policies and can cause algorithmic penalties or manual removal from search." },
-      { id: "B", text: "They consume excessive electricity on the client's laptop." },
-      { id: "C", text: "They automatically delete your domain name registration within 48 hours." },
-      { id: "D", text: "They prevent visitors from purchasing products with credit cards." }
+      { id: "A", text: "It violates Google's rules and can get your site penalized or banned from search." },
+      { id: "B", text: "It uses up too much electricity on visitors' phones." },
+      { id: "C", text: "It deletes your domain name within 24 hours." },
+      { id: "D", text: "It prevents visitors from using credit cards." }
     ],
     correctAnswer: "A",
-    explanation: "Google's Spam Policies strictly prohibit link schemes intended to manipulate PageRank. Sites caught purchasing backlinks, exchanging links excessively, or utilizing Private Blog Networks (PBNs) face severe ranking drops or complete removal via manual actions."
+    explanation: "Buying links or using link spam breaks Google's rules. If caught, Google can punish your website by dropping your rank or removing you from search entirely."
   },
 
   // ==========================================
@@ -415,71 +415,71 @@ export const QUESTIONS = [
     id: 26,
     categoryId: "performance",
     categoryName: "Practical SEO & Performance",
-    question: "What is Google's 'Mobile-First Indexing'?",
+    question: "What does Google's 'Mobile-First Indexing' mean?",
     options: [
-      { id: "A", text: "Google only shows search results to users holding smartphones." },
-      { id: "B", text: "Google predominantly uses the mobile version of a website's content for indexing and ranking." },
-      { id: "C", text: "Websites must develop an iOS and Android app to be indexed on Google." },
-      { id: "D", text: "Desktop computers are entirely blocked from searching Google." }
+      { id: "A", text: "Google only shows search results to people on mobile phones." },
+      { id: "B", text: "Google primarily uses the mobile version of your website to evaluate and rank it." },
+      { id: "C", text: "Websites must build an app store app to be on Google." },
+      { id: "D", text: "Desktop computers are blocked from searching Google." }
     ],
     correctAnswer: "B",
-    explanation: "Mobile-First Indexing means Google primarily crawls and evaluates the smartphone version of a page's content, structured data, and media to determine its ranking—even when evaluating results for desktop searchers."
+    explanation: "Mobile-First Indexing means Google looks at how your website performs and looks on mobile devices first when deciding where to rank it."
   },
   {
     id: 27,
     categoryId: "performance",
     categoryName: "Practical SEO & Performance",
-    question: "What are Google's 'Core Web Vitals' designed to measure?",
+    question: "What do Google's 'Core Web Vitals' measure?",
     options: [
-      { id: "A", text: "The total sales revenue and profit margin of an e-commerce website." },
-      { id: "B", text: "Real-world user experience metrics including loading speed (LCP), responsiveness (INP), and visual stability (CLS)." },
-      { id: "C", text: "The grammatical correctness and readability score of blog articles." },
-      { id: "D", text: "The physical temperature of the web hosting data center." }
+      { id: "A", text: "How much money a website earns each month." },
+      { id: "B", text: "Real-world user experience like loading speed, responsiveness, and visual stability." },
+      { id: "C", text: "Spelling and grammar errors in your blog posts." },
+      { id: "D", text: "The physical temperature of the web server." }
     ],
     correctAnswer: "B",
-    explanation: "Core Web Vitals are user-centered performance metrics: Largest Contentful Paint (LCP for loading performance), Interaction to Next Paint (INP for interactive responsiveness), and Cumulative Layout Shift (CLS for visual stability)."
+    explanation: "Core Web Vitals measure user experience: how fast the page loads (LCP), how quickly it reacts when clicked (INP), and whether elements jump around while loading (CLS)."
   },
   {
     id: 28,
     categoryId: "performance",
     categoryName: "Practical SEO & Performance",
-    question: "What is Google Search Console (GSC) primarily used for by webmasters?",
+    question: "What is Google Search Console used for?",
     options: [
       { id: "A", text: "Playing video games directly inside Google Chrome." },
-      { id: "B", text: "Monitoring organic search performance, inspecting URLs, checking indexing status, and reviewing crawl errors directly from Google." },
-      { id: "C", text: "Processing credit card transactions for online store checkouts." },
-      { id: "D", text: "Managing company email accounts and employee calendars." }
+      { id: "B", text: "Tracking your site's Google search performance, clicks, and indexing issues." },
+      { id: "C", text: "Processing credit card payments for online shops." },
+      { id: "D", text: "Managing company email accounts." }
     ],
     correctAnswer: "B",
-    explanation: "Google Search Console is an essential, free tool from Google. It provides firsthand data on organic search queries, impressions, click-through rates, indexing issues, mobile usability, and security notices."
+    explanation: "Google Search Console is a free Google tool that shows which keywords bring visitors to your site, how many people click your links, and any crawl errors."
   },
   {
     id: 29,
     categoryId: "performance",
     categoryName: "Practical SEO & Performance",
-    question: "In web analytics (like Google Analytics 4), what does 'Organic Traffic' represent?",
+    question: "What is 'Organic Traffic' in website analytics?",
     options: [
-      { id: "A", text: "Visitors who arrived after clicking an unpaid search engine result." },
-      { id: "B", text: "Visitors who clicked on sponsored Google Ads banner campaigns." },
-      { id: "C", text: "Visitors who bought organic food and produce through your website." },
-      { id: "D", text: "Traffic generated by automated spam bots scanning for open ports." }
+      { id: "A", text: "Visitors who arrived from free, unpaid search engine results." },
+      { id: "B", text: "Visitors who clicked on paid Google Ads." },
+      { id: "C", text: "Visitors who purchased organic food products." },
+      { id: "D", text: "Automated spam bots crawling the website." }
     ],
     correctAnswer: "A",
-    explanation: "Organic traffic refers to visitors who find and access your website through unpaid organic search listings (such as Google, Bing, DuckDuckGo, or Yahoo), distinguishing it from Direct, Paid, Referral, or Social traffic."
+    explanation: "Organic traffic refers to visitors who find your website naturally through unpaid search results on Google, Bing, or Yahoo."
   },
   {
     id: 30,
     categoryId: "performance",
     categoryName: "Practical SEO & Performance",
-    question: "What is 'Keyword Cannibalization' and why is it problematic for your website?",
+    question: "What is 'Keyword Cannibalization'?",
     options: [
-      { id: "A", text: "When search bots consume too much network bandwidth while indexing your server." },
-      { id: "B", text: "When multiple pages on your own website target the exact same keyword and intent, competing against each other and splitting ranking authority." },
-      { id: "C", text: "When a competitor hacks into your site and changes all your H1 tags." },
-      { id: "D", text: "When you translate your keywords into Latin." }
+      { id: "A", text: "When search bots consume too much network bandwidth." },
+      { id: "B", text: "When multiple pages on your own website compete against each other for the same keyword." },
+      { id: "C", text: "When a hacker changes the headings on your website." },
+      { id: "D", text: "When you translate your keywords into another language." }
     ],
     correctAnswer: "B",
-    explanation: "Keyword cannibalization happens when two or more pages on the same domain compete for the identical search query and intent. This confuses search engines on which page to prioritize, diluting impressions, backlinks, and click-through rates across both pages."
+    explanation: "Keyword cannibalization happens when two or more pages on your site target the exact same keyword, competing against each other and hurting both pages' rankings."
   }
 ];
 
